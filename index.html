@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <!-- Main title for the page -->
+    <h1>"Milestone 5: Unique Path and Shareable Link - Submitted by Wajahat Ali"</h1>
+
+    <!-- Start of the form where users will input their resume details -->
+    <form id="resumeForm">
+      <!-- Fieldset for personal information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- Input for user's name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <!-- Input for user's email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <!-- Input for user's phone number -->
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" id="phone" name="phone" required /><br />
+
+        <!--Profile Picture -->
+        <label for="profilePicture">Upload Picture For Resume:</label>
+        <input
+          type="file"
+          id="profilePicture"
+          name="profilePicture"
+          accept="image/*"
+          required />
+        <br />
+      </fieldset>
+
+      <!--Resume URL -->
+      <label for="username">Resume 2024 Unique Generated URL:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your username"
+        required
+      /><br />
+      
+
+      <!-- Fieldset for education details -->
+      <fieldset>
+        <legend>Education</legend>
+        <!-- Textarea for education details -->
+        <label for="education">Provide details about your education:</label>
+        <textarea id="education" name="education" rows="4" required></textarea>
+        <br />
+      </fieldset>
+
+      <!-- Fieldset for experience details -->
+      <fieldset>
+        <legend>Experience</legend>
+        <!-- Textarea for experience details -->
+        <label for="experience">Add your work experience:</label>
+        <textarea
+          id="experience"
+          name="experience"
+          rows="4"
+          required
+        ></textarea>
+        <br />
+      </fieldset>
+
+      <!-- Fieldset for skills -->
+      <fieldset>
+        <legend>Skills</legend>
+        <!-- Textarea for skills details -->
+        <label for="skills">List your skills:</label>
+        <textarea id="skills" name="skills" rows="4" required></textarea> <br />
+      </fieldset>
+
+      <!-- Button to submit the form and generate the resume -->
+      <button type="submit">Generate Resume Below</button>
+    </form>
+
+    <!-- Section where the generated resume will be displayed -->
+    <div id="resumeOutput">
+      <!-- Resume Will Be Generated Below -->
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
